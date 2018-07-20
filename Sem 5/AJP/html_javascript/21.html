@@ -1,0 +1,28 @@
+<HTML>
+	<HEAD>
+		<TITLE>Error handling</TITLE>
+	<SCRIPT>
+		var txt="";
+		function display()
+		{
+			try
+			{
+				alerting("Hi there!");
+			}
+			catch(err)
+			{
+				txt="There was an error on this page.\n\n";
+				txt=txt+"Error description: "+err.message+"\n\n";
+				txt=txt+"Click OK to continue."
+				alert(txt);
+			}
+		}
+	</SCRIPT>
+	</HEAD>
+	<BODY>
+		<H1>To Demonstrate try... catch</H1>
+		<HR>
+		<p>Click on button to run the display() function in the script.</p>
+		<button onclick="display()">call display()</button>
+</HTML>
+	

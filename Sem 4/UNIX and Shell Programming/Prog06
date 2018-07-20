@@ -1,0 +1,10 @@
+#Program to find factorial of a given number
+
+echo "enter a number to print its factorial"
+read n
+f=1
+for (( i= $n; i>=2; i=`expr $i - 1` ))
+do
+	f=`expr $i \* $f`
+done
+echo "Factorial of $n = $f" 

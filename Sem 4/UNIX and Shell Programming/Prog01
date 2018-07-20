@@ -1,0 +1,15 @@
+#this is a program on if
+#To check whether a given number is -ve +ve or zero 
+
+echo enter a number to check wether it is positive, negative or zero
+read a
+if [ $a -gt 0 ]
+then
+	echo "Number entered is positive"
+	
+elif [ $a -lt 0 ]
+then
+	echo "Number entered is negative"
+else
+	echo "Number is zero"
+fi

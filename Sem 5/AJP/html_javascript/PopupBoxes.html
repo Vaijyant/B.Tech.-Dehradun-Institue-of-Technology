@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Vaijyant Alert!</title>
+		<script>
+			function alert_m()
+			{
+				alert("Vaijyant's Alert");
+			}
+			function confirm_m()
+			{
+				var x;
+				var r=confirm("Press a button!");
+				if (r==true)
+				{
+					x="You pressed OK!";
+				}
+				else
+				{
+					x="You pressed Cancel!";
+				}
+				document.getElementById("conf").innerHTML=x;
+			}
+			function prompt_m()
+			{
+				var x;
+				var person=prompt("Please enter your name","");
+				if (person!=null)
+				{
+					x="Hello " + person + "! How are you today?";
+					document.getElementById("prom").innerHTML=x;
+				}
+			}
+		</script>
+	</head>
+	<body>
+	<H1>This is a page to demonstrate popups!</H1><hr>
+
+	This is a demonstration of Alert box! <br>
+	<input type="button" onclick="alert_m()" value="Alert Button!"/>
+	<hr>
+
+	This is a demonstration of Confirm box! <br>
+	<input type="button" onclick="confirm_m()" value="Alert Button!"/>
+	<p id="conf">Output is displayed here!</p>
+	<hr>
+
+	This is a demonstration of Prompt Box
+	<button onclick="prompt_m()">Try it!</button>
+	<p id="prom">Message gets displayed here!</p>
+	</body>
+</html>

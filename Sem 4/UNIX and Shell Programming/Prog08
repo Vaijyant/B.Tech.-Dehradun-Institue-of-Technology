@@ -1,0 +1,12 @@
+#Enter a number and print its reverse
+echo "Enter a number to displays its reverse"
+read n
+f=0
+while [ $n -gt 0 ] 
+do
+	f=`expr $f \* 10`
+	l=`expr $n % 10`
+	f=`expr $f + $l`
+	n=`expr $n / 10`
+done
+echo "Sum of digits = $f"

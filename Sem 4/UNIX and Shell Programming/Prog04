@@ -1,0 +1,23 @@
+#Write a menu driven program to perform the operations as per user's choice
+
+echo "1. list fiels and directories"
+echo "2. copy a file"
+echo "3. move a file"
+echo "4. display date"
+echo "Enter an option"
+read ch
+case $ch in
+1) ls;;
+2) echo "Enter a file name to copy"
+	read S
+	echo "Enter destination file"
+	read D
+	cp $S $D ;;
+3) echo "Enter a file name to rename"
+	read S
+	echo "Enter destination file"
+	read D
+	mv $S $D ;;
+4) date ;;
+*) echo "Invalid option"
+esac

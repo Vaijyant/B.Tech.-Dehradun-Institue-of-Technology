@@ -1,0 +1,11 @@
+#Enter a number and print its digits sum
+echo "Enter a number to displays sum of its digits"
+read n
+f=0
+while [ $n -gt 0 ] 
+do
+	l=`expr $n % 10`
+	f=`expr $f + $l`
+	n=`expr $n / 10`
+done
+echo "Sum of digits = $f"

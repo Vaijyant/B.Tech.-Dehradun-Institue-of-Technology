@@ -1,0 +1,64 @@
+<HTML>
+	<HEAD>
+		<TITLE>String Objects</TITLE>
+		<SCRIPT>
+			function calcLength()
+			{
+				var txt = "Vaijyant Tomar"
+				alert("Lenght is: "+txt.length);
+			}
+			function calcIndexOf()
+			{
+				var str = "This is a sample text.";
+				var i = str.indexOf("sample");
+				alert("Index of \"sample\" is: "+i);
+			}
+			function changeCase()
+			{
+				var str = "AxByCz";
+				var str1=str.toUpperCase();
+				var str2=str.toLowerCase();
+				var msg=str+" in Upper Case is: "+str1;
+				msg+="\n"+str+" in Lower Case is: "+str2;
+				alert(msg);
+			}
+			function strConcat()
+			{
+				var str1 = "Java";
+				var str2 = "Program";
+				var str = str1.concat(str2);
+				alert("Concatenated string is: "+str);
+			}
+			function strSubstring()
+			{
+				var str = "accommodate";
+				var substr = str.substring(7, 11);
+				alert("Substring of "+str+": "+substr);
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<H1>To demonstrate String objects</H1>
+		<HR>
+		
+		<p>Click on button to calculate lenght of "Vaijyant Tomar"</p>
+		<button onclick="calcLength()">Calculate lenght</button>
+		<br><br>
+
+		<p>Click on button to calculate index of "sample" in the string "This is a sample text."</p>
+		<button onclick="calcIndexOf()">Calculate index</button>
+		<br><br>
+
+		<p>Click on button to change case of "AxByCz".</p>
+		<button onclick="changeCase()">Change case</button>
+		<br><br>
+
+		<p>Click on button to concatenate the strings "Java" and "Program".</p>
+		<button onclick="strConcat()">Concatenate Strings</button>
+		<br><br>
+
+		<p>Click on button to get substring of "accommodate".</p>
+		<button onclick="strSubstring()">Get substring</button>
+		<br><br>
+	</BODY>
+</HTML>

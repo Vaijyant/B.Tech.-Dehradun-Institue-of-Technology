@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>
+			Factorial Page
+		</title>
+		<script>
+			function factorial(f,n)
+			{
+				if(n==0)
+					alert("factorial of number is 1");
+				else
+				{
+					var a=1, i;
+					for(i=1;i<=n;i++)
+					{
+						a=a*i;
+					}
+					alert("factorial of number is "+a);
+				}
+			}
+		</script>
+	</head>
+	<body>
+
+	<h1>Page to calculate factorial</h1><hr>
+	<form>
+		number:<input type="text" name="t"> <input type="button" value="submit" onClick="factorial(this.form,t.value)">
+	</form>
+
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<HTML>
+	<HEAD>
+		<TITLE>User defined object</TITLE>
+		<SCRIPT>
+		function display()
+		{
+			var msg;
+			var person=new Object();
+			person.firstname="Vaijyant";
+			person.lastname="Tomar";
+			person.age=20;
+			person.pid="11CS110A"; 
+			
+			alert(person.firstname+" is "+person.age+" years old.\nID is "+person.pid+".");
+		}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<H1>To demonstrate user defined object</H1><HR>
+		<p>Click button to retrive "person" object values</p>
+		<button onclick="display()">Get person</button>
+	</BODY>
+</HTML>

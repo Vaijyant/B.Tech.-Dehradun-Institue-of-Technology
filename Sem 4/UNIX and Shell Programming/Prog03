@@ -1,0 +1,25 @@
+#Program on case
+
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+echo "5. Modulus"
+echo "Enter an option"
+read ch
+echo "Enter two numbers to perform the operation"
+read a
+read b
+case $ch in
+1) r=`expr $a + $b`
+	echo "result = $r" ;;
+2) r=`expr $a - $b`
+	echo "result = $r" ;;
+3) r=`expr $a \* $b`
+	echo "result = $r" ;;
+4) r=`expr $a / $b`
+	echo "result = $r" ;;
+5) r=`expr $a % $b`
+	echo "result = $r" ;;
+*) echo "Invalid option!"
+esac
